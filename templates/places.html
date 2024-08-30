@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1> places to visit in city</h1>
+        {% for i in name %}
+        <h1>{{i}}</h1>
+        {% endfor %}
+        <a href="{% url 'foodie:biriyani' %}">navigating from ootyhills to biriyani</a>
+        <a href="{% url 'ootyhills:ooty' %}"> navigating from biriyani to ootyhills</a>
+    </center>
+</body>
+</html>
